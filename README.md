@@ -3,7 +3,7 @@
 ### Installation
 if you want to use pretrained models, then all you need to do is:
 ```sh
-git clone https://oss.navercorp.com/deep-purple/DPNN-Food_Classification.git
+git clone https://github.com/djang000/Food-Classication.git
 ```
 
 if you also want to train new modes, you will need the Food-101 or other natural images for training files and MobileNet wegihts by running.
