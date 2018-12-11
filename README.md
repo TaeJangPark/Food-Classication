@@ -10,7 +10,7 @@ if you also want to train new modes, you will need the Food-101 or other natural
 
 you can download MobileNet weight by using below command
 ```sh
-wget https://oss.navercorp.com/deep-purple/DPNN-Food_Classification/tree/master/output/models/MobileNet_model.tar.gz
+wget download.tensorflow.org/models/mobilenet_v1_2018_08_02/mobilenet_v1_1.0_224.tgz
 ```
 To prepare the Food dataset for use with train.py, you will have to convert it to Tensorflow's TFRecords format, which shards the images into large files for more efficient reading from disk. convert_tfrecord.py can be used for this as shown below. Change --num_threads to however many threads your cores can handle, and ensure that it divides whatever you choose for --train_shards. This block will give shards ~100MB in size:
 But before the below command, you should change surfix in config.py train or test and TFrecord_dir for saving conveted tfrecord files. 
